@@ -1,4 +1,4 @@
-﻿<?php
+﻿<?php require __DIR__ . '/vendor/autoload.php'; 
 $app_lang = ['en', 'ru'];
 
 $language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
