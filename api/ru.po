@@ -1,0 +1,184 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-11-02 20:30+0200\n"
+"PO-Revision-Date: 2016-11-02 20:41+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: index.php\n"
+
+#: index.php:89
+msgid "Home"
+msgstr "Главная"
+
+#: index.php:90
+msgid "Features"
+msgstr "Особенности"
+
+#: index.php:91 index.php:270
+msgid "Shots"
+msgstr "Снимки"
+
+#: index.php:92
+msgid "Download"
+msgstr "Скачать"
+
+#: index.php:114
+msgid "Albumist - stay in touch"
+msgstr "Albumist - будь в курсе"
+
+#: index.php:115
+msgid "with your friends"
+msgstr "свежих новостей от друзей"
+
+#: index.php:116
+msgid ""
+"Albumist is a free online photo sharing and social application.\n"
+"                    Share your photos and follow the updates of celebrities "
+"and other people of your interest.\n"
+"                    Albumist is a perfect application to stay in touch with "
+"your friends and\n"
+"                    share your life moments. With great add-ons like photo "
+"puzzles and crosswords, your friends will be\n"
+"                    challenged if they are to see your the most recent "
+"updates!"
+msgstr ""
+"Albumist — это бесплатное онлайн приложение для обмена фотографиями, а так "
+"же общения. Делитесь своими фотографиями, следите за обновлениями "
+"знаменитостей и других людей, которые интересуют Вас. Благодаря кроссвордам "
+"и ребусам, Вашим друзьям придется постараться, если они действительно хотят "
+"увидеть самые последние обновления!"
+
+#: index.php:123
+msgid "Download the app"
+msgstr "Загрузить приложение"
+
+#: index.php:147
+msgid "High Portability"
+msgstr "Высокая портативность"
+
+#: index.php:148
+msgid "By phone, by tablet or by computer - you can use it anywhere"
+msgstr ""
+"Вы можете открыть приложение как на телефоне, так и на планшете с  "
+"компьютером"
+
+#: index.php:154
+msgid "Cloud Upload Support"
+msgstr "Поддержка \"облака\""
+
+#: index.php:155
+msgid "Gallery support. Fast and easy to use"
+msgstr "Хорошая связь с галереей. Быстро и удобно в использовании"
+
+#: index.php:161
+msgid "New People"
+msgstr "Новые люди"
+
+#: index.php:162
+msgid "It is so easy to find a new acquaintance"
+msgstr "Теперь найти новое знакомство — так просто!"
+
+#: index.php:181
+msgid "Friends"
+msgstr "Друзья"
+
+#: index.php:181
+msgid "- simple search"
+msgstr "— простой поиск"
+
+#: index.php:183
+msgid ""
+"Like someone's profile? Just add this person to a list of your friends, keep "
+"in touch with him and don't miss his new publications!"
+msgstr ""
+"Понравился чей-то профиль? Просто добавьте этого человека в друзья, чтобы "
+"поддерживать с ним связь и не упускать его новые публикации!"
+
+#: index.php:184
+msgid ""
+"Don't worry about difference of your mobile devices. Albumist is supported "
+"on iOS and Android"
+msgstr ""
+"Не беспокойтесь о различии ваших девайсов. Albumist поддерживается как на  "
+"на iOS, так и на Android"
+
+#: index.php:215
+msgid "Chat"
+msgstr "Общение"
+
+#: index.php:215
+msgid "in live mode"
+msgstr "в живом режиме"
+
+#: index.php:216
+msgid ""
+"It is so simple to get a good mood!\n"
+"                    <br> Just start a new chat with your friend!\n"
+"                    Discuss topical issues, share news.\n"
+"                    <br> Also look for answers and tips for clues puzzles"
+msgstr ""
+"Так просто поднять себе настоение!\n"
+"\vПросто начните чат с другом. \n"
+"<br> Вы можете обсуждать проблемы, делиться новостями.\n"
+"\vТакже ищите ответы и подсказки для разгадок ребусов"
+
+#: index.php:239
+msgid "Sharing"
+msgstr "Обмен"
+
+#: index.php:239
+msgid "photo"
+msgstr "фотографиями"
+
+#: index.php:241
+msgid ""
+"Share photos with friends with just one click! Albumist offers unusual ways "
+"of presenting pictures.\n"
+"                    You can encrypt your picture. Only attentive friends "
+"will receive a reward in the representation of your encrypted photos\n"
+"                    <br>You can use two types of encryption:"
+msgstr ""
+"Делитесь фотографиями с помощью одного клика! Albumist предлагает необычные "
+"способы публикации изображений.\n"
+"  Вы можете зашифровать свою фотографию. И только внимательные друзья "
+"получат вознаграждение в виде вашего поста.\n"
+"                     <br> Вы можете использовать два типа шифрования:"
+
+#: index.php:245
+msgid "crosswords"
+msgstr "кроссводы"
+
+#: index.php:246
+msgid "puzzles"
+msgstr "ребусы"
+
+#: index.php:270
+msgid "what change your life"
+msgstr ", которые Вам точно понравятся!"
+
+#: index.php:351
+msgid "Like this app?"
+msgstr "Понравилось приложение?"
+
+#: index.php:432
+msgid "Albumist 2016 | All rights reserved."
+msgstr "Albumist 2016 |  Все права защищены."
+
+#~ msgid ""
+#~ "It is so simple to get a good mood!\n"
+#~ "                    <br> Just start a new chat with your friend!\n"
+#~ "                    Discuss topical issues, share news.\n"
+#~ "                    <br>Also look for answers and tips for clues puzzles"
+#~ msgstr ""
+#~ "Так просто поднять себе настоение!\vПросто начните чат с другом. \n"
+#~ "Вы можете обсуждать проблемы, делиться новостями.\vТакже ищите ответы и "
+#~ "подсказки для разгадок ребусов"

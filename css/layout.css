@@ -83,6 +83,23 @@
 
 .logo {height: 100px;}
 
+.lang{
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 43px;
+    transition: .3s;
+    width: 20px;
+    color: #fff;
+    margin-top: -7px;
+    padding: 15px 10px !important;
+    font-weight: 100;
+}
+
+.lang a{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+}
 
 
 
@@ -112,9 +129,9 @@
 
 .slide-model img {bottom: 0; position: absolute; right: 0; }
 
-.slide-model-a {z-index: 0; -webkit-animation-delay: 0.7s; -moz-animation-delay: 0.7s; -ms-animation-delay: 0.7s; -o-animation-delay: 0.7s; animation-delay: 0.7s;}
+.slide-model-a {z-index: 10; -webkit-animation-delay: 0.7s; -moz-animation-delay: 0.7s; -ms-animation-delay: 0.7s; -o-animation-delay: 0.7s; animation-delay: 0.7s;}
 
-.slide-model-b {z-index: 10;}
+.slide-model-b {z-index: 0;}
 
 .slide-content {width: 50%; float: left; height: 450px; padding-top: 250px;}
 
@@ -246,24 +263,24 @@
 
 .feature-selector-buttons li:hover {color: #727171;}
 
-.feature-selector-buttons li.active .selector-triangle {border-left-width: 20px; border-left-style: solid; border-right-color: rgba(0,0,0,0) !important; 
+.feature-selector-buttons li.active .selector-triangle {border-left-width: 20px; border-left-style: solid; border-right-color: rgba(0,0,0,0) !important;
 border-top-color: rgba(0,0,0,0) !important; border-bottom-color: rgba(0,0,0,0) !important;}
 
 /*-------------------------*/
 /* CALL TO ACTION */
 /*-------------------------*/
-.call-to-action {width: 100%; height: auto; background: url('../img/cta_bg.jpg') no-repeat center center; background-size: cover; -webkit-background-size: cover; overflow: hidden; position: relative;}
+.download {width: 100%; height: auto; background: url('../img/cta_bg.jpg') no-repeat center center; background-size: cover; -webkit-background-size: cover; overflow: hidden; position: relative;}
 
-.call-to-action .overlay {width: 100%; height: 100%; position: absolute; left: 0; top: 0; opacity: 0.8;}
+.download .overlay {width: 100%; height: 100%; position: absolute; left: 0; top: 0; opacity: 0.8;}
 
-.call-to-action h1 { text-align: center; color: #fff; font-size: 55px; letter-spacing: -5px; font-weight: 700;}
+.download h1 { text-align: center; color: #fff; font-size: 55px; letter-spacing: -5px; font-weight: 700;}
 
-.call-to-action-content {padding: 200px 0; text-align: center;}
+.download-content {padding: 200px 0; text-align: center;}
 
-.call-to-action .button {display: table; margin: 30px auto 0; font-size: 16px; box-shadow: 0px 1px 3px rgba(0,0,0,0.1); -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.1);}
+.download .button {display: table; margin: 30px auto 0; font-size: 16px; box-shadow: 0px 1px 3px rgba(0,0,0,0.1); -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.1);}
 
 @media (min-width: 770px)  {
-    .call-to-action-content a{
+    .download-content a{
         margin: 0px 50px;
     }
 }
@@ -335,14 +352,14 @@ border-top-color: rgba(0,0,0,0) !important; border-bottom-color: rgba(0,0,0,0) !
 
 .portfolio-item:hover .portfolio-item-bullet {border: 3px solid rgba(255, 255, 255, 0.7);}
 
-.portfolio-item-desc {font-family: 'Ubuntu', sans-serif; font-size: 17px; text-align: center; text-transform: uppercase; font-weight: 700; 
+.portfolio-item-desc {font-family: 'Ubuntu', sans-serif; font-size: 17px; text-align: center; text-transform: uppercase; font-weight: 700;
 letter-spacing: -1px; color: #DAD7D7; line-height: 35px; margin: 0 0 7px;}
 
 .portfolio-item-desc, .portfolio-item-image img, .portfolio .filter i, .portfolio .filter a {-webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;}
 
 .portfolio .filter {float: left;}
 
-.portfolio .filter a {color: #DAD7D7; margin: 0 5px 0 0; padding: 5px 22px; border: 1px solid #ccc; border-radius: 3px; -webkit-border-radius: 3px; text-align: center; background: #FEFEFE; font-family: 'Ubuntu', sans-serif; text-transform: uppercase; font-weight: 700; font-size: 12px; line-height: 30px; 
+.portfolio .filter a {color: #DAD7D7; margin: 0 5px 0 0; padding: 5px 22px; border: 1px solid #ccc; border-radius: 3px; -webkit-border-radius: 3px; text-align: center; background: #FEFEFE; font-family: 'Ubuntu', sans-serif; text-transform: uppercase; font-weight: 700; font-size: 12px; line-height: 30px;
 display: block; float: left;}
 
 .portfolio .option-set {display: block; min-height: 30px; margin-bottom: 50px;}
@@ -368,7 +385,7 @@ display: block; float: left;}
 /*-------------------------*/
 /* #JS FALLBACKS */
 /*-------------------------*/
-.no-js .zoomer-frame, .no-js .showcase-model img, .no-js .screenshot, .no-js .carousel-model, .no-js .price-table, .no-js .call-to-action .button {opacity: 1;}
+.no-js .zoomer-frame, .no-js .showcase-model img, .no-js .screenshot, .no-js .carousel-model, .no-js .price-table, .no-js .download .button {opacity: 1;}
 .no-js .menu .active a {color: #DAD7D7;}
 .no-js .menu .active a:hover {color: #727171;}
 .no-js .quote-slider-controls, .no-js .carousel-next, .no-js .carousel-prev {display: none;}
