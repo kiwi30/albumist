@@ -1,5 +1,6 @@
 {
     "require": {
-        "gettext/gettext": "^4.1"
+        "gettext/gettext": "^4.1",
+        "gettext/languages": "^2.1"
     }
 }
