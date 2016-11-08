@@ -1,4 +1,6 @@
-﻿<?php require __DIR__ . '/vendor/autoload.php'; 
+﻿<?php
+require __DIR__ . '/vendor/autoload.php';
+
 $app_lang = ['en', 'ru'];
 
 $language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
@@ -54,7 +56,11 @@ textdomain($language);
     <link rel="stylesheet" type="text/css" href="css/ie.css">
     <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Quicksand" rel="stylesheet">
-
+    <script>
+        function changeLang(lang){
+            window.location = "?lang=".concat(lang);
+        }
+    </script>
 </head>
 <body>
 <!-- Primary Page Layout
@@ -92,8 +98,8 @@ textdomain($language);
                         <li><a href="#showcase"><?php echo _("Features")?></a></li>
                         <li><a href="#shots"><?php echo _("Shots")?></a></li>
                         <li><a href="#download"><?php echo _("Download")?></a></li>
-                        <li class="lang"><a href="?lang=ru""><?php echo _("ru")?></a>
-                            <a href="?lang=en"><?php echo _("en")?></a></li>
+                        <li class="lang"><a href="#" onclick="changeLang('ru');"><?php echo _("ru")?></a>
+                            <a href="#" onclick="changeLang('en');"><?php echo _("en")?></a></li>
                     </ul>
                 </nav>
             </div>
@@ -318,7 +324,7 @@ textdomain($language);
 			<span class="lightbox-close">
 				<i class="fa fa-times"></i>
 			</span>
-            <img src="img/shots/screenshot_01.jpg" alt="App Screenshot" />
+            <img src="img/shots/screenshot_01.jpg" alt="App Screenshot"  class="lightbox-shot"/>
         </div>
 
         <!-- Lightbox Overlay-->
