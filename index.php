@@ -45,6 +45,8 @@ $array = array(
 
 );
 
+
+
 $app_lang = ['en', 'ru'];
 
 $language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
@@ -55,15 +57,6 @@ if(isset($_GET['lang'])){
         $language = $new_lang;
     }
 }
-
-
-/*putenv("LC_ALL=$language");
-setlocale(LC_ALL, $language);
-
-bindtextdomain($language, '/locale');
-textdomain($language);
-bind_textdomain_codeset($language, 'UTF-8');*/
-
 
 function  getRuText($foo){
     global $language, $array;
