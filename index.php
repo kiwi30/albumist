@@ -27,7 +27,7 @@ $array = array(
     "in live mode"    => "в живом режиме",
     "It is so simple to get a good mood!
                      Just start a new chat with your friend!
-                    Discuss topical issues, share news.
+                    <br> Discuss topical issues, share news.
                      Also look for answers and tips for clues puzzles"    => "Так просто поднять себе настроение!
 Просто начните чат с другом. 
  Вы можете обсуждать проблемы, делиться новостями.
@@ -36,8 +36,7 @@ $array = array(
     "photo"    => "фотографиями",
     "Share photos with friends with just one click! Albumist offers unusual ways of presenting pictures.
                     You can encrypt your picture. Only attentive friends will receive a reward in the representation of your encrypted photos
-                    You can use two types of encryption:"    => "Делитесь фотографиями с помощью одного клика! Albumist предлагает необычные способы публикации изображений. 
-                    Вы можете зашифровать свою фотографию. И только внимательные друзья получат вознаграждение в виде вашего поста. Вы можете использовать два типа шифрования:",
+                    You can use two types of encryption:"    => "Делитесь фотографиями с помощью одного клика! Albumist предлагает необычные способы публикации изображений. <br> Вы можете зашифровать свою фотографию. И только внимательные друзья получат вознаграждение в виде вашего поста. Вы можете использовать два типа шифрования:",
     "crosswords"    => "кроссворды",
     "puzzles"    => "ребусы",
     "Screen shots"    => "Скриншоты",
@@ -277,7 +276,7 @@ function  getRuText($foo){
                 <h1><?php echo getRuText("Chat")?> <span style="color: #dad7d7"><?php echo getRuText("in live mode")?></span></h1>
                 <div class="title-bullet"><span></span> <?php echo getRuText("It is so simple to get a good mood!
                      Just start a new chat with your friend!
-                    Discuss topical issues, share news.
+                    <br> Discuss topical issues, share news.
                      Also look for answers and tips for clues puzzles")?><p>
                 </div>
 

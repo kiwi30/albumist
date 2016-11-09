@@ -1,2 +1,5 @@
 /vendor
 /.idea
+/locale
+ru.mo
+ru.po
