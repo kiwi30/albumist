@@ -93,7 +93,7 @@ textdomain($language);
             <div class="twelve columns">
                 <nav class="nav">
                     <ul class="menu">
-                        <li><a href="#"><?php echo _("Home")?></a></li>
+                        <li><a href="#slider"><?php echo _("Home")?></a></li>
                         <li><a href="#showcase"><?php echo _("Features")?></a></li>
                         <li><a href="#shots"><?php echo _("Shots")?></a></li>
                         <li><a href="#download"><?php echo _("Download")?></a></li>
@@ -457,7 +457,6 @@ textdomain($language);
 ================================================== -->
 <script type="text/javascript" src="js/jquery.1.10.2.js"></script>
 <script type="text/javascript" src="js/jquery.loupe.min.js"></script>
-<script type="text/javascript" src="js/tweetie.js"></script>
 <script type="text/javascript" src="js/jquery.placeholder.js"></script>
 <script type="text/javascript" src="js/waypoints.min.js"></script>
 <script type="text/javascript" src="js/waypoints-sticky.min.js"></script>
@@ -468,8 +467,6 @@ textdomain($language);
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript">
     new WOW().init();
-
-    $('.tweet').twittie();
 </script>
 
 <!--[if lt IE 10]>
