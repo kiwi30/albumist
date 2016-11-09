@@ -119,11 +119,10 @@ textdomain($language);
             <div class="slide-content">
                 <h1 class="wow fadeInDownBig"><?php echo _("Albumist - stay in touch")?></h1>
                 <h2 class="wow fadeInDownBig"><?php echo _("with your friends")?>  </h2>
-                <p> <?php echo _("Albumist is a free online photo sharing and social application.
-                    Share your photos and follow the updates of celebrities and other people of your interest.
+                <p> <?php echo _("Share your photos and follow the updates of celebrities and other people of your interest.
                     Albumist is a perfect application to stay in touch with your friends and
                     share your life moments. With great add-ons like photo puzzles and crosswords, your friends will be
-                    challenged if they are to see your the most recent updates!")?>
+                    challenged if they are want to see your the most recent updates!")?>
                 </p>
                 <div class="button-container">
                     <a href="#call-to-action" class="button color"><?php echo _("Download the app")?></a>
@@ -151,7 +150,7 @@ textdomain($language);
             <div class="one-third column feature-icon-box wow fadeInUp">
                 <i class="fa fa-cog"></i>
                 <h3><?php echo _("High Portability")?></h3>
-                <p><?php echo _("By phone, by tablet or by computer - you can use it anywhere")?></p>
+                <p><?php echo _("By phone or by tablet - you can use it anywhere")?></p>
             </div>
 
             <!-- Icon Box -->
@@ -372,7 +371,7 @@ textdomain($language);
     </section><!-- / Call to Action -->
 
     <section class="money">
-
+<h1 style="text-align: center">money</h1>
         <!-- Container -->
         <div class="container">
 

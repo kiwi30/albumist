@@ -3,15 +3,15 @@
 
 p a, p a:visited, .section-title h1 span, .menu li.active a, .menu li.active a:hover, 
 .showcase-content h1 span, .team-member-socials li:hover i, .social-network-links i:hover, 
-.check-list i, .button.color:hover 
+.check-list i, .button.color:hover
 
-{color: #38c0d6;}
+{color: #fdfbff;}
 
 .logo, .logo-area, .feature-icon-box:hover i, .zoomer-bg, .zoomer-bg .overlay, .title-bullet span, 
 .screenshot .overlay, .lightbox-close i, .team-member-bullet i, .counter h4, .testimonials .overlay, 
 .twitter-feed .overlay, .twitter-feed-icon, .price-table-header span, .call-to-action .overlay, 
 .feature-selector-buttons li.active .selector-body, .button.color, .portfolio .filter a.selected,
-.portfolio-item-bullet i  
+.portfolio-item-bullet i
 
 {background: #38c0d6;}
 
