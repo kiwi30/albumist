@@ -1,8 +1,0 @@
-{
-    "require": {
-        "gettext/gettext": "^4.1",
-        "gettext/languages": "^2.1",
-		"ext-gettext": "^0.0.0",
-        "php": "^5.6"
-   }
-}

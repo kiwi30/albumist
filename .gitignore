@@ -3,3 +3,5 @@
 /locale
 ru.mo
 ru.po
+composer.json
+composer.lock
