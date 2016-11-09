@@ -5,7 +5,6 @@ function console_log( $data ){
     echo '</script>';
 }
 
-$directory = dirname(__FILE__).'/locale';
 $app_lang = ['en', 'ru'];
 
 $language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
@@ -21,7 +20,7 @@ if(isset($_GET['lang'])){
 putenv("LANG=$language");
 setlocale(LC_ALL, $language . "UTF-8");
 
-bindtextdomain($language . "UTF-8", $directory);
+bindtextdomain($language . "UTF-8", '/locale');
 textdomain($language . "UTF-8");
 bind_textdomain_codeset($domain, 'UTF-8');
 
