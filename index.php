@@ -1,10 +1,6 @@
 ﻿<?php
-
-function console_log( $data ){
-    echo '<script>';
-    echo 'console.log('. json_encode( $data ) .')';
-    echo '</script>';
-}
+if (!function_exists("gettext")){ echo "gettext is not installed\n";}
+else{echo "gettext is supported\n";}
 
 $app_lang = ['en', 'ru'];
 
