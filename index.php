@@ -17,7 +17,7 @@ if(isset($_GET['lang'])){
 }
 
 
-putenv("LANG=$language");
+putenv("LC_ALL=$language");
 setlocale(LC_ALL, $language);
 
 bindtextdomain($language, "./locale");
