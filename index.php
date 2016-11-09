@@ -567,6 +567,9 @@ console_log(gettext('Home'));
 <?php
 
 console_log(gettext('Home'));
+
+$dirs = array_filter(glob('*'), 'is_dir');
+print_r( $dirs);
 ?>
 
 <!-- End Document
