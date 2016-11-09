@@ -1,5 +1,4 @@
 ﻿<?php
-require __DIR__ . '/vendor/autoload.php';
 
 function console_log( $data ){
     echo '<script>';
@@ -11,26 +10,19 @@ $app_lang = ['en', 'ru'];
 
 $language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 
-console_log($language);
-
 if(isset($_GET['lang'])){
     $new_lang = $_GET['lang'];
-    console_log($new_lang);
     if($new_lang != null && in_array($new_lang, $app_lang)){
         $language = $new_lang;
     }
 }
 
-console_log($language);
 putenv("LANG=$language");
 setlocale(LC_ALL, $language);
-
-console_log("not end " . $language);
 
 bindtextdomain($language, "./locale");
 textdomain($language);
 
-console_log("end " . $language);
 ?>
 
 
