@@ -1,9 +1,50 @@
 ﻿<?php
-function console_log( $data ){
-    echo '<script>';
-    echo 'console.log('. json_encode( $data ) .')';
-    echo '</script>';
-}
+$array = array(
+    "Home"    => "Главная",
+    "Features"    => "Особенности",
+    "Shots"    => "Снимки",
+    "Download"    => "Скачать",
+    "ru"    => "ru",
+    "en"    => "en",
+    "Albumist - stay in touch"    => "Albumist - будь в курсе",
+    "with your friends"    => "свежих новостей от друзей",
+    "Share your photos and follow the updates of celebrities and other people of your interest.
+                    Albumist is a perfect application to stay in touch with your friends and
+                    share your life moments. With great add-ons like photo puzzles and crosswords, your friends will be
+                    challenged if they are want to see your the most recent updates!"    => "Делитесь своими фотографиями, следите за обновлениями знаменитостей и других людей, которые интересуют Вас. Благодаря кроссвордам и ребусам, Вашим друзьям придется постараться, если они действительно хотят увидеть самые последние обновления!",
+    "Download the app"    => "Загрузить приложение",
+    "High Portability"    => "Высокая портативность",
+    "By phone or by tablet - you can use it anywhere"    => "Вы можете открыть приложение как на телефоне, так и на планшете ",
+    "Cloud Upload Support"    => "Поддержка \"облака\"",
+    "Gallery support. Fast and easy to use"    => "Быстрая связь с галереей. Удобно в использовании",
+    "New People"    => "Новые люди",
+    "It is so easy to find a new acquaintance"    => "Теперь найти новое знакомство — так просто!",
+    "Friends"    => "Друзья",
+    "- simple search"    => "— простой поиск",
+    "Like someone's profile? Just add this person to a list of your friends, keep in touch with him and don't miss his new publications!"    => "Понравился чей-то профиль? Просто добавьте этого человека в друзья, чтобы поддерживать с ним связь и не упускать его новые публикации!",
+    "Don't worry about difference of your mobile devices. Albumist is supported on iOS and Android"    => "Не беспокойтесь о различии ваших девайсов. Albumist поддерживается как на  на iOS, так и на Android",
+    "Chat"    => "Общение",
+    "in live mode"    => "в живом режиме",
+    "It is so simple to get a good mood!
+                     Just start a new chat with your friend!
+                    Discuss topical issues, share news.
+                     Also look for answers and tips for clues puzzles"    => "Так просто поднять себе настроение!
+Просто начните чат с другом. 
+ Вы можете обсуждать проблемы, делиться новостями.
+Также ищите ответы и подсказки для разгадок ребусов",
+    "Sharing"    => "Обмен",
+    "photo"    => "фотографиями",
+    "Share photos with friends with just one click! Albumist offers unusual ways of presenting pictures.
+                    You can encrypt your picture. Only attentive friends will receive a reward in the representation of your encrypted photos
+                    You can use two types of encryption:"    => "Делитесь фотографиями с помощью одного клика! Albumist предлагает необычные способы публикации изображений. 
+                    Вы можете зашифровать свою фотографию. И только внимательные друзья получат вознаграждение в виде вашего поста. Вы можете использовать два типа шифрования:",
+    "crosswords"    => "кроссворды",
+    "puzzles"    => "ребусы",
+    "Screen shots"    => "Скриншоты",
+    "Like this app?"    => "Понравилось приложение?",
+    "Albumist 2016 | All rights reserved."    => "Albumist 2016 |  Все права защищены.",
+
+);
 
 $app_lang = ['en', 'ru'];
 
@@ -17,12 +58,22 @@ if(isset($_GET['lang'])){
 }
 
 
-putenv("LC_ALL=$language");
+/*putenv("LC_ALL=$language");
 setlocale(LC_ALL, $language);
 
 bindtextdomain($language, '/locale');
 textdomain($language);
-bind_textdomain_codeset($language, 'UTF-8');
+bind_textdomain_codeset($language, 'UTF-8');*/
+
+
+function  getRuText($foo){
+    global $language, $array;
+    if($language == "ru"){
+        return $array[$foo];
+    } else {
+        return $foo;
+    }
+}
 
 ?>
 
@@ -99,12 +150,12 @@ bind_textdomain_codeset($language, 'UTF-8');
             <div class="twelve columns">
                 <nav class="nav">
                     <ul class="menu">
-                        <li><a href="#slider"><?php echo _("Home")?></a></li>
-                        <li><a href="#showcase"><?php echo _("Features")?></a></li>
-                        <li><a href="#shots"><?php echo _("Shots")?></a></li>
-                        <li><a href="#download"><?php echo _("Download")?></a></li>
-                        <li class="lang"><a href="#" onclick="changeLang('ru');"><?php echo _("ru")?></a>
-                            <a href="#" onclick="changeLang('en');"><?php echo _("en")?></a></li>
+                        <li><a href="#slider"><?php echo getRuText("Home")?></a></li>
+                        <li><a href="#showcase"><?php echo getRuText("Features")?></a></li>
+                        <li><a href="#shots"><?php echo getRuText("Shots")?></a></li>
+                        <li><a href="#download"><?php echo getRuText("Download")?></a></li>
+                        <li class="lang"><a href="#" onclick="changeLang('ru');"><?php echo getRuText("ru")?></a>
+                            <a href="#" onclick="changeLang('en');"><?php echo getRuText("en")?></a></li>
                     </ul>
                 </nav>
             </div>
@@ -123,15 +174,15 @@ bind_textdomain_codeset($language, 'UTF-8');
 
             <!-- Slide Content -->
             <div class="slide-content">
-                <h1 class="wow fadeInDownBig"><?php echo _("Albumist - stay in touch")?></h1>
-                <h2 class="wow fadeInDownBig"><?php echo _("with your friends")?>  </h2>
-                <p> <?php echo _("Share your photos and follow the updates of celebrities and other people of your interest.
+                <h1 class="wow fadeInDownBig"><?php echo getRuText("Albumist - stay in touch")?></h1>
+                <h2 class="wow fadeInDownBig"><?php echo getRuText("with your friends")?>  </h2>
+                <p> <?php echo getRuText("Share your photos and follow the updates of celebrities and other people of your interest.
                     Albumist is a perfect application to stay in touch with your friends and
                     share your life moments. With great add-ons like photo puzzles and crosswords, your friends will be
                     challenged if they are want to see your the most recent updates!")?>
                 </p>
                 <div class="button-container">
-                    <a href="#call-to-action" class="button color"><?php echo _("Download the app")?></a>
+                    <a href="#call-to-action" class="button color"><?php echo getRuText("Download the app")?></a>
                 </div>
             </div>
 
@@ -155,22 +206,22 @@ bind_textdomain_codeset($language, 'UTF-8');
             <!-- Icon Box -->
             <div class="one-third column feature-icon-box wow fadeInUp">
                 <i class="fa fa-cog"></i>
-                <h3><?php echo _("High Portability")?></h3>
-                <p><?php echo _("By phone or by tablet - you can use it anywhere")?></p>
+                <h3><?php echo getRuText("High Portability")?></h3>
+                <p><?php echo getRuText("By phone or by tablet - you can use it anywhere")?></p>
             </div>
 
             <!-- Icon Box -->
             <div class="one-third column feature-icon-box wow fadeInUp">
                 <i class="fa fa-cloud-download"></i>
-                <h3><?php echo _("Cloud Upload Support")?></h3>
-                <p><?php echo _("Gallery support. Fast and easy to use")?></p>
+                <h3><?php echo getRuText("Cloud Upload Support")?></h3>
+                <p><?php echo getRuText("Gallery support. Fast and easy to use")?></p>
             </div>
 
             <!-- Icon Box -->
             <div class="one-third column feature-icon-box wow fadeInUp">
                 <i class="fa fa-user-plus "></i>
-                <h3><?php echo _("New People")?></h3>
-                <p><?php echo _("It is so easy to find a new acquaintance")?> </p>
+                <h3><?php echo getRuText("New People")?></h3>
+                <p><?php echo getRuText("It is so easy to find a new acquaintance")?> </p>
             </div>
 
             <div class="clear"></div>
@@ -189,10 +240,10 @@ bind_textdomain_codeset($language, 'UTF-8');
 
             <!-- Contents -->
             <div class="nine columns showcase-content">
-                <h1><?php echo _("Friends")?><span style="color: #dad7d7"> <?php echo _("- simple search")?></span></h1>
+                <h1><?php echo getRuText("Friends")?><span style="color: #dad7d7"> <?php echo getRuText("- simple search")?></span></h1>
                 <div class="title-bullet"><span></span></div>
-                <p><?php echo _("Like someone's profile? Just add this person to a list of your friends, keep in touch with him and don't miss his new publications!")?>
-                    <br><?php echo _("Don't worry about difference of your mobile devices. Albumist is supported on iOS and Android")?></p>
+                <p><?php echo getRuText("Like someone's profile? Just add this person to a list of your friends, keep in touch with him and don't miss his new publications!")?>
+                    <br><?php echo getRuText("Don't worry about difference of your mobile devices. Albumist is supported on iOS and Android")?></p>
                 <div class="os-icons">
                     <i class="fa fa-apple"></i>
                     <i class="fa fa-android"></i>
@@ -223,11 +274,11 @@ bind_textdomain_codeset($language, 'UTF-8');
             <!-- Contents -->
             <div class="nine columns showcase-content">
 
-                <h1><?php echo _("Chat")?> <span style="color: #dad7d7"><?php echo _("in live mode")?></span></h1>
-                <div class="title-bullet"><span></span> <?php echo _("It is so simple to get a good mood!
-                    <br> Just start a new chat with your friend!
+                <h1><?php echo getRuText("Chat")?> <span style="color: #dad7d7"><?php echo getRuText("in live mode")?></span></h1>
+                <div class="title-bullet"><span></span> <?php echo getRuText("It is so simple to get a good mood!
+                     Just start a new chat with your friend!
                     Discuss topical issues, share news.
-                    <br> Also look for answers and tips for clues puzzles")?><p>
+                     Also look for answers and tips for clues puzzles")?><p>
                 </div>
 
             </div>
@@ -247,14 +298,14 @@ bind_textdomain_codeset($language, 'UTF-8');
             <!-- Contents -->
             <div class="nine columns showcase-content">
 
-                <h1><?php echo _("Sharing")?><span style="color: #dad7d7"><?php echo _("photo")?></span></h1>
+                <h1><?php echo getRuText("Sharing")?><span style="color: #dad7d7"><?php echo getRuText("photo")?></span></h1>
                 <div class="title-bullet"><span></span></div>
-                <p><?php echo _("Share photos with friends with just one click! Albumist offers unusual ways of presenting pictures.
+                <p><?php echo getRuText("Share photos with friends with just one click! Albumist offers unusual ways of presenting pictures.
                     You can encrypt your picture. Only attentive friends will receive a reward in the representation of your encrypted photos
-                    <br>You can use two types of encryption:")?></p>
+                    You can use two types of encryption:")?></p>
                 <ul class="check-list">
-                    <li><i class="fa fa-check-circle"></i><?php echo _("crosswords")?></li>
-                    <li><i class="fa fa-check-circle"></i><?php echo _("puzzles")?></li>
+                    <li><i class="fa fa-check-circle"></i><?php echo getRuText("crosswords")?></li>
+                    <li><i class="fa fa-check-circle"></i><?php echo getRuText("puzzles")?></li>
                 </ul>
 
             </div>
@@ -278,7 +329,7 @@ bind_textdomain_codeset($language, 'UTF-8');
 
             <!-- Section Title -->
             <div class="sixteen columns section-title">
-                <h1><?php echo _("Screen shots")?></h1>
+                <h1><?php echo getRuText("Screen shots")?></h1>
                 <div class="title-bullet"><span></span></div>
             </div>
 
@@ -337,18 +388,6 @@ bind_textdomain_codeset($language, 'UTF-8');
     </section><!-- / Shots -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Call to Action -->
     <section class="download" id="download" style=" background-image: url(img/tile.jpg);">
 
@@ -359,7 +398,7 @@ bind_textdomain_codeset($language, 'UTF-8');
         <div class="container">
 
             <div class="sixteen columns download-content">
-                <h1 style="color: #38c0d6"><?php echo _("Like this app?")?></h1>
+                <h1 style="color: #38c0d6"><?php echo getRuText("Like this app?")?></h1>
                 <div class="but">
                     <?php if($language =="ru"){ ?>
                         <a href="https://itunes.apple.com/ru/app/albumist/id1128079856"><img src="img/buttons/Untitled-3.png" alt=""></a>
@@ -450,7 +489,7 @@ bind_textdomain_codeset($language, 'UTF-8');
         <!-- Container -->
         <div class="container">
 
-            <h6 class="copyright-text"><?php echo _("Albumist 2016 | All rights reserved.")?></h6>
+            <h6 class="copyright-text"><?php echo getRuText("Albumist 2016 | All rights reserved.")?></h6>
 
         </div><!-- / Container -->
 
