@@ -25,9 +25,12 @@ console_log($language);
 putenv("LANG=$language");
 setlocale(LC_ALL, $language);
 
+console_log("not end " . $language);
+
 bindtextdomain($language, "./locale");
 textdomain($language);
 
+console_log("end " . $language);
 ?>
 
 
