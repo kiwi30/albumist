@@ -17,12 +17,12 @@ if(isset($_GET['lang'])){
 }
 
 
-putenv("LANG=$language");
+putenv("LC_ALL=$language");
 setlocale(LC_ALL, $language . "UTF-8");
 
-bindtextdomain($language . "UTF-8", '/locale');
-textdomain($language . "UTF-8");
-bind_textdomain_codeset($domain, 'UTF-8');
+bindtextdomain($language, '/locale');
+textdomain($language);
+bind_textdomain_codeset($language, 'UTF-8');
 
 ?>
 
