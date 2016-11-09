@@ -23,7 +23,6 @@ setlocale(LC_ALL, $language);
 bindtextdomain($language, "./locale");
 textdomain($language);
 
-console_log(gettext('Home'));
 ?>
 
 
@@ -563,14 +562,6 @@ console_log(gettext('Home'));
         portfolio();
     });
 </script>
-
-<?php
-
-console_log(gettext('Home'));
-
-$dirs = array_filter(glob('*'), 'is_dir');
-print_r( $dirs);
-?>
 
 <!-- End Document
 ================================================== -->
