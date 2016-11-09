@@ -5,7 +5,7 @@ function console_log( $data ){
     echo '</script>';
 }
 
-$app_lang = ['en_EN', 'ru_RU'];
+$app_lang = ['en', 'ru'];
 
 $language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 
@@ -20,7 +20,7 @@ if(isset($_GET['lang'])){
 putenv("LC_ALL=$language");
 setlocale(LC_ALL, $language . "UTF-8");
 
-bindtextdomain($language, "locale");
+bindtextdomain($language, "./locale");
 textdomain($language);
 
 ?>
@@ -102,8 +102,8 @@ textdomain($language);
                         <li><a href="#showcase"><?php echo _("Features")?></a></li>
                         <li><a href="#shots"><?php echo _("Shots")?></a></li>
                         <li><a href="#download"><?php echo _("Download")?></a></li>
-                        <li class="lang"><a href="#" onclick="changeLang('ru_RU');"><?php echo _("ru")?></a>
-                            <a href="#" onclick="changeLang('en_EN');"><?php echo _("en")?></a></li>
+                        <li class="lang"><a href="#" onclick="changeLang('ru');"><?php echo _("ru")?></a>
+                            <a href="#" onclick="changeLang('en');"><?php echo _("en")?></a></li>
                     </ul>
                 </nav>
             </div>
