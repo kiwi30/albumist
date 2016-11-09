@@ -1,4 +1,9 @@
 ﻿<?php
+function console_log( $data ){
+    echo '<script>';
+    echo 'console.log('. json_encode( $data ) .')';
+    echo '</script>';
+}
 
 $app_lang = ['en', 'ru'];
 
@@ -11,12 +16,14 @@ if(isset($_GET['lang'])){
     }
 }
 
+
 putenv("LANG=$language");
 setlocale(LC_ALL, $language);
 
 bindtextdomain($language, "./locale");
 textdomain($language);
 
+console_log(gettext('Home'));
 ?>
 
 
@@ -556,6 +563,11 @@ textdomain($language);
         portfolio();
     });
 </script>
+
+<?php
+
+console_log(gettext('Home'));
+?>
 
 <!-- End Document
 ================================================== -->
