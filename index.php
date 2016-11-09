@@ -18,7 +18,6 @@ setlocale(LC_ALL, $language);
 bindtextdomain($language, "./locale");
 textdomain($language);
 
-
 ?>
 
 

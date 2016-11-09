@@ -2,6 +2,6 @@
     "require": {
         "gettext/gettext": "^4.1",
         "gettext/languages": "^2.1",
-		"ext-gettext": "*"
+		"ext-gettext": "^0.0.0"
    }
 }
