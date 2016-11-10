@@ -174,7 +174,7 @@ function  getRuText($foo){
                     challenged if they are want to see your the most recent updates!")?>
                 </p>
                 <div class="button-container">
-                    <a href="#call-to-action" class="button color"><?php echo getRuText("Download the app")?></a>
+                    <a href="#download" class="button color"><?php echo getRuText("Download the app")?></a>
                 </div>
             </div>
 
